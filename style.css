@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+i{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgb(138, 248, 47);
+    pointer-events: none;
+    animation:  animate 2s linear forwards;
+}
+
+
+@keyframes animate{
+    0%{
+        opacity: 1;
+        transform:  translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+    }
+}
